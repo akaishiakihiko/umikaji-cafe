@@ -1,0 +1,484 @@
+@media screen and (max-width:480px) {
+
+  @import '_settings';
+
+  //-------------------------------
+  // 全体構造
+  // ------------------------------
+
+
+
+  //-------------------------------
+  // ヘッダー
+  // ------------------------------
+  header {
+    small {
+      display: none;
+    }
+
+    .inner {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .header-left {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding-left: 0;
+      margin-right: 0;
+
+      img {
+        padding: 0;
+      }
+
+      ul {
+        width: 320px;
+        margin: 0 auto;
+      }
+
+    }
+
+
+    .header-right {
+      .header-mainvisual {
+        width: 100%;
+        height: 100%;
+      }
+
+      .header-title {
+        display: none;
+      }
+
+      .header-open {
+        display: none;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //-------------------------------
+  // メイン
+  // ------------------------------
+  main {
+    .main-title {
+      display: none;
+    }
+
+    .news {
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        font-size: $font-size-big;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: $font-size-middle;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: $font-size-normal;
+        margin-bottom: 70px;
+      }
+    }
+
+    .staff {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .staff-left {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+
+      .staff-right {
+        width: 100%;
+        padding: 0;
+
+        h3 {
+          padding-top: 150px;
+          font-size: $font-size-middle;
+        }
+
+        p {
+          font-size: $font-size-normal;
+          padding: 10px;
+          line-height: 2.2;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .chair {
+      width: 100%;
+      height: 100%;
+      padding-top: 220px;
+      margin-bottom: 50px;
+    }
+
+    #food-menu {
+      .food-title {
+        margin-bottom: 30px;
+      }
+
+      .food {
+        display: flex;
+        flex-direction: column;
+
+        .food-image {
+          width: 100%;
+          margin: 0;
+        }
+
+        .food-text {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 50px;
+
+          h3 {
+            font-size: $font-size-middle;
+            padding: 0 10px;
+            margin-bottom: 30px;
+          }
+
+          p {
+            width: 100%;
+            font-size: $font-size-normal;
+            line-height: 2.2;
+            letter-spacing: 2px;
+            padding: 0 10px;
+
+          }
+        }
+      }
+    }
+
+
+    #sweets-menu {
+      .sweets-title {
+        display: none;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .sweets-flame {
+
+        padding: 0;
+        margin: 0;
+      }
+
+      .sweets-flex {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .sweets-text {
+          padding: 0 10px;
+
+          .a {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+
+
+          h3 {
+            font-size: $font-size-middle;
+            margin: 0 0 30px 0;
+          }
+
+          p {
+            width: 100%;
+            margin-bottom: 30px;
+            line-height: 2.2;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+
+    .cat {
+      width: 100%;
+    }
+
+    .dog {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      top: 200px;
+    }
+
+
+    .cat-text {
+      p:first-child {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    #party-box {
+
+      .party-top img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+      }
+
+      .party-title {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        h2,
+        h3 {
+          font-size: $font-size-large;
+        }
+      }
+
+      .party-center {
+        margin-bottom: 50px;
+
+        p {
+          display: none;
+        }
+      }
+
+      .party-bottom {
+        display: none;
+      }
+    }
+
+    #catering-service {
+      .party-title {
+
+        h2,
+        h3 {
+          font-size: $font-size-large;
+          margin-bottom: 30px;
+        }
+
+      }
+
+      .party-center {
+        width: 100%;
+
+        h3 {
+          font-size: $font-size-middle;
+        }
+      }
+
+      .party-bottom {
+
+        h3 {
+          font-size: $font-size-middle;
+        }
+
+
+        .party-three {
+          display: none;
+        }
+
+        .party-pizza {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+
+
+
+
+
+
+
+    //-------------------------------
+    // トップページ
+    // ------------------------------
+
+
+
+    //-------------------------------
+    // ビュー
+    // ------------------------------
+    #view {
+      .news {
+        p {
+          margin-bottom: 90px;
+        }
+      }
+
+      .card-text {
+        width: 100%;
+        margin: 0 auto;
+
+        h2 {
+          font-size: $font-size-middle;
+        }
+
+        p {
+          width: 100%;
+          padding: 0 10px;
+          font-size: $font-size-normal;
+          line-height: 2.2;
+          letter-spacing: 2px;
+        }
+      }
+
+      .umikaji-text {
+        width: 100%;
+        margin: 0 auto 30px 0;
+      }
+
+      .naha-airpote,
+      .senaga-beach,
+      .sunset,
+      .night {
+        width: 100%;
+        margin: 0 auto 30px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        p,
+        h2 {
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+
+      .naha-airplane {
+        img {
+          margin-bottom: 0px;
+          padding: 0 10px;
+        }
+      }
+
+      .naha-airpote {
+        p {
+          margin-bottom: 30px;
+        }
+      }
+
+      .senaga-beach {
+        img:first-child {
+          display: none;
+        }
+      }
+
+
+      .sunset {
+        flex-direction: column-reverse;
+      }
+    }
+
+    //-------------------------------
+    // アクセス
+    // ------------------------------
+
+    #access {
+
+      .news {
+        p {
+          margin-bottom: 90px;
+        }
+      }
+
+      .access-text {
+        h2 {
+          font-size: $font-size-middle;
+        }
+
+        p {
+          width: 100%;
+          padding: 0 10px;
+          font-size: $font-size-normal;
+          line-height: 2.2;
+          letter-spacing: 2px;
+          font-size: $font-size-normal;
+          margin-bottom: 30px;
+        }
+      }
+
+      .google-map iframe {
+        width: 400px;
+        margin: 0 auto 30px auto;
+      }
+
+      dl {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      dt {
+        width: 50%;
+        height: 0;
+      }
+
+      dd {
+        width: 50%;
+        height: 0;
+      }
+
+    }
+
+
+  }
+
+
+  //-------------------------------
+  // フッター
+  // ------------------------------
+
+  .copy {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .footer-left {
+      margin: 0;
+      margin-top: 100px;
+    }
+
+    .footer-right {
+      margin-right: 0;
+
+      .footer-icon {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+}

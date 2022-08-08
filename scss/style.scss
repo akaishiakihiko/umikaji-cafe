@@ -1,0 +1,758 @@
+@import '_settings';
+
+//-------------------------------
+// 全体構造
+// ------------------------------
+
+body {
+  font-family:
+    '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
+  font-size: $font-size-normal;
+  color: $color;
+  background-color: $bace-color;
+  font-weight: 500;
+}
+
+a:hover {
+  color: $accent-color;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 60px;
+}
+
+//-------------------------------
+// ヘッダー
+// ------------------------------
+header {
+  background-color: $bace-color;
+  display: flex;
+  margin-bottom: 100px;
+
+  small {
+    writing-mode: vertical-rl;
+    padding: 350px 20px 0 20px;
+  }
+
+  .inner {
+    width: 100%;
+    background-color: $main-color;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    @include row();
+  }
+
+  .header-left {
+    padding-left: 100px;
+    margin-right: 200px;
+
+    img {
+      padding: 200px 0 0 100px;
+      margin-bottom: 50px;
+    }
+
+
+    ul {
+      display: block;
+      margin-left: 120px;
+      @include row ();
+      width: 320px;
+
+
+      li {
+        width: 80px;
+        border-left: 1px solid #fff;
+        @include center ();
+
+      }
+
+      li:last-child {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+
+  .header-right {
+    position: relative;
+    background-color: $main-color;
+
+
+    .header-mainvisual {
+      margin-top: -60px;
+      background-color: $main-color;
+    }
+
+
+    .header-title {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: $font-size-middle;
+      margin-right: 80px;
+
+      p {
+        display: inline-block;
+        background-color: #fff;
+        padding: 10px 20px;
+        margin-top: 30px;
+      }
+    }
+
+    .header-open {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $main-color;
+      margin: 0 0 -50px 0;
+
+      p {
+        @include center ();
+        line-height: 2.0;
+        padding-top: 60px;
+      }
+    }
+  }
+}
+
+
+//-------------------------------
+// メイン
+// ------------------------------
+
+.main-title {
+  @include center ();
+  margin-top: 50px 0 0 0;
+
+  p {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px 25px;
+    margin: 0 auto 10px auto;
+    font-size: $font-size-middle;
+  }
+
+}
+
+.news {
+  background-image: url(../images/main-flame.png);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding: 100px 30px 80px;
+  @include center ();
+
+  h1,
+  h3 {
+    font-size: $font-size-large;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: $font-size-middle;
+    margin-bottom: 80px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+
+
+
+
+//-------------------------------
+// フッター
+// ------------------------------
+.copy {
+  writing-mode: vertical-rl;
+  margin: 0 0 50px 50px;
+}
+
+footer {
+  @include row ();
+  width: 100%;
+  height: 300px;
+  line-height: 300px;
+  background-color: $footer-color;
+
+
+  .footer-left {
+    @include row ();
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+
+  .footer-right {
+    margin-right: 400px;
+
+    .footer-icon {
+      width: 200px;
+      font-size: $font-size-large;
+      @include row ();
+      color: #fff;
+    }
+  }
+}
+
+
+
+//-------------------------------
+// トップページ
+// ------------------------------
+
+main {
+  .main-title {
+    margin-top: 300px;
+  }
+
+  .staff {
+    @include row ();
+    @include wrapper1200 ();
+    position: relative;
+    margin-bottom: -200px;
+
+    .staff-left {
+      width: 700px;
+      padding: 50px;
+      background-color: $bace-color;
+    }
+
+    .staff-right {
+      background-image: url(../images/Umikaji\ cafe.png);
+      background-repeat: no-repeat;
+      background-size: 98%;
+      width: 500px;
+      padding-top: 120px;
+
+      h3 {
+        font-size: $font-size-large;
+        line-height: 1.5;
+        letter-spacing: 10px;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        text-indent: -1.5em;
+      }
+
+      p {
+        line-height: 2.5;
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  .chair {
+    margin: 0 auto;
+    @include center ();
+    margin-bottom: 200px;
+  }
+
+  .food-title {
+    @include center ();
+    margin-bottom: 100px;
+
+    h2 {
+      font-size: $font-size-big;
+      margin-bottom: 20px;
+    }
+  }
+
+  .food {
+    width: 100%;
+    margin: 0 auto;
+    @include row ();
+    justify-content: flex-start;
+    overflow: hidden;
+
+    .food-image {
+      margin-left: -30px;
+      width: 750px;
+    }
+
+    .food-text {
+      width: 650px;
+      padding-left: 20px;
+
+      h3 {
+        font-size: $font-size-large;
+        line-height: 1.5;
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        width: 500px;
+        line-height: 2.5;
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  .relative {
+    flex-direction: row-reverse;
+
+    .food-image {
+      margin-right: -30px;
+    }
+  }
+
+  #sweets-menu {
+    .sweets-title {
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .sweets-flame {
+        width: 650px;
+        @include center;
+        padding: 120px 20px;
+        background-color: $bace-color;
+        margin: -100px 400px 0;
+        position: relative;
+
+        h2 {
+          font-size: $font-size-big;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .sweets-flex {
+      @include row ();
+      width: 1200px;
+      margin: 0 auto;
+
+      .sweets-text {
+        .a {
+          @include row ();
+        }
+
+        h3 {
+          display: block;
+          font-size: $font-size-large;
+          margin: 30px 0;
+        }
+
+        p {
+          width: 550px;
+          line-height: 3;
+          letter-spacing: 3px;
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+
+  .cat {
+    width: 1200px;
+    margin: 0 auto;
+    @include center ();
+    position: relative;
+  }
+
+  .dog {
+    position: absolute;
+    top: 300px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin-bottom: 50px;
+  }
+
+  .cat-text {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    p {
+      line-height: 2.5;
+
+      margin-bottom: 30px;
+    }
+
+    p:first-child {
+      width: 800px;
+      margin: 0 auto;
+      border-top: 1px solid $color;
+      border-bottom: 1px solid $color;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: $font-size-large;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    small {
+      font-size: $font-size-middle;
+    }
+
+    address:last-child {
+      display: inline-block;
+      border: 1px solid $color;
+      padding: 20px;
+    }
+  }
+
+
+  #party-box {
+    .party-top img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .party-title {
+      width: 650px;
+      @include center;
+      padding: 80px 20px;
+      margin: -100px 380px 0;
+      background-color: $bace-color;
+      position: relative;
+
+      h2 {
+        font-size: $font-size-big;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        display: inline-block;
+        font-size: $font-size-large;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $color;
+
+      }
+
+      p {
+        line-height: 3.0;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .party-center {
+      @include row ();
+      justify-content: center;
+      // margin-bottom: 50px;
+
+      p {
+        border: 1px solid $color;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        line-height: 2.0;
+        font-size: $font-size-middle;
+        color: $color;
+        @include center ();
+      }
+
+      img {
+        margin: 0 100px;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .party-bottom {
+      @include center ();
+      position: relative;
+      margin: 0 auto 100px auto;
+      margin-top: 200px;
+
+
+      .party-three {
+        width: 900px;
+        @include row ();
+        position: absolute;
+        top: -100px;
+        left: 300px;
+      }
+
+    }
+  }
+
+
+  #catering-service {
+    text-align: center;
+
+    .party-title {
+      h2 {
+        font-size: $font-size-big;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        display: inline-block;
+        font-size: $font-size-large;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $color;
+
+      }
+
+      p {
+        line-height: 3.0;
+        margin-top: 50px;
+        margin-bottom: 120px;
+      }
+    }
+
+    .party-center {
+      display: inline-block;
+      width: 1000px;
+      margin: 0 auto;
+      border-bottom: 1px solid $color;
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: $font-size-large;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      li {
+        padding-right: 50px;
+        margin-bottom: 50px;
+      }
+
+      li:last-child {
+        padding-right: none;
+      }
+    }
+
+    .party-bottom {
+      margin-bottom: -100px;
+
+      p {
+        line-height: 3.0;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-size: $font-size-large;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+
+      small {
+        font-size: $font-size-middle;
+      }
+
+
+      address:last-child {
+        display: inline-block;
+        border: 1px solid $color;
+        padding: 20px;
+      }
+    }
+  }
+
+
+}
+
+//-------------------------------
+// ビュー
+// ------------------------------
+
+#view {
+  .news {
+    margin-top: 300px;
+  }
+
+  .news .header-mainvisual img {
+    padding: 5px;
+    background-color: #fff;
+    margin-right: 150px;
+  }
+
+  .view-mainvisual img {
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+
+  }
+
+  .header-content {
+    font-size: 150px;
+    color: $accent-color;
+    position: absolute;
+    right: 0;
+    margin: -300px 50px 0 0;
+  }
+
+  .coco {
+    color: $accent-color;
+  }
+
+  .news {
+    margin-bottom: 120px;
+  }
+
+  .card-text {
+    h2 {
+      font-size: $font-size-large;
+      letter-spacing: 6px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 500px;
+      letter-spacing: 3px;
+      line-height: 2.7;
+    }
+  }
+
+  .umikaji-text {
+    text-align: center;
+    margin-top: -250px;
+    margin-bottom: 50px;
+
+    p {
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+
+  .naha-airplane img {
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+
+  .naha-airpote {
+    @include row ();
+    margin-bottom: 100px;
+  }
+}
+
+.senaga-beach {
+  @include row ();
+
+  .beach-text {
+    margin: 300px 0 200px 0;
+  }
+}
+
+.sunset {
+  @include row ();
+  margin: 50px 0 200px 0;
+}
+
+.night {
+  @include row ();
+  margin-bottom: -100px;
+
+  .night-text {
+    margin-left: 50px;
+  }
+}
+
+.umikaji-text,
+.naha-airplane,
+.naha-airpote,
+.senaga-beach,
+.sunset,
+.night {
+  @include wrapper1200 ();
+}
+
+//-------------------------------
+// アクセス
+// ---------------------------
+
+#access {
+  .news {
+    margin-top: 300px;
+  }
+
+  .header-mainvisual img {
+    padding: 5px;
+    background-color: #fff;
+    margin-right: 150px;
+  }
+
+  .header-content {
+    font-size: 150px;
+    color: $accent-color;
+    position: absolute;
+    right: 0;
+    margin: -300px 50px 0 0;
+  }
+
+  .koko {
+    color: $accent-color;
+  }
+
+  .access-text {
+    h2 {
+      font-size: $font-size-large;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    p {
+      width: 850px;
+      margin: 0 auto;
+      letter-spacing: 3px;
+      line-height: 2.7;
+      margin-bottom: 150px;
+    }
+  }
+
+  .google-map {
+    width: 1200px;
+    margin: 0 auto 200px auto;
+  }
+
+  .image-center img {
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .info {
+    margin: 100px 0;
+
+    h3 {
+      text-align: center;
+      font-size: $font-size-middle;
+      margin-bottom: 20px;
+    }
+
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      width: 600px;
+      margin: 0 auto -150px auto;
+    }
+
+    dt {
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid $color;
+    }
+
+    dd {
+      width: 350px;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid $color;
+    }
+
+  }
+}

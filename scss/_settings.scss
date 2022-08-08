@@ -1,0 +1,44 @@
+//-------------------------------
+// 設定
+// ------------------------------
+
+$main-color: #DEDDDD;
+$accent-color: #FFAEAE;
+$bace-color: #F7F6F5;
+$footer-color: #595757;
+
+$color: #595757;
+
+$font-size-normal: 14px;
+$font-size-middle: 20px;
+$font-size-large: 30px;
+$font-size-big: 40px;
+
+//真ん中に配置する
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+//横に並べる
+@mixin row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+//1200px幅に制限
+@mixin wrapper1200 () {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//フードメニューパターン
+@mixin foodmenu () {}
+
+
+//スイーツメニューパターン
+@mixin sweetsmmenu() {}

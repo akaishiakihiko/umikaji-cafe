@@ -570,7 +570,7 @@ main {
 
 #view {
   .news {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .news .header-mainvisual img {
@@ -599,7 +599,7 @@ main {
   }
 
   .news {
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 
   .card-text {
@@ -675,9 +675,6 @@ main {
 // ---------------------------
 
 #access {
-  .news {
-    margin-top: 300px;
-  }
 
   .header-mainvisual img {
     padding: 5px;
@@ -690,7 +687,7 @@ main {
     color: $accent-color;
     position: absolute;
     right: 0;
-    margin: -300px 50px 0 0;
+    margin: -100px 50px 0 0;
   }
 
   .koko {

@@ -264,11 +264,13 @@ main #view .night h2 {
   }
   main #access .google-map {
     width: 100%;
+    margin: 0 auto;
   }
   main #access .google-map iframe {
-    width: 100%;
+    width: 97%;
     margin: 0 auto;
     padding: 0 10px;
+    margin-bottom: 50px;
   }
   main #access dl {
     display: none;

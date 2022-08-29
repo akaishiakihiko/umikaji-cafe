@@ -356,6 +356,9 @@ main .cat-text address:last-child {
   border: 1px solid #595757;
   padding: 20px;
 }
+main #party-box {
+  display: none;
+}
 main #party-box .party-top img {
   width: 100%;
   margin: 0 auto;
@@ -492,7 +495,7 @@ main #catering-service .party-bottom address:last-child {
 }
 
 #view .news {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 #view .news .header-mainvisual img {
   padding: 5px;
@@ -515,7 +518,7 @@ main #catering-service .party-bottom address:last-child {
   color: #FFAEAE;
 }
 #view .news {
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
 #view .card-text h2 {
   font-size: 30px;
@@ -585,6 +588,9 @@ main #catering-service .party-bottom address:last-child {
   margin-right: auto;
 }
 
+#access .news {
+  margin-top: 300px;
+}
 #access .header-mainvisual img {
   padding: 5px;
   background-color: #fff;
@@ -595,7 +601,7 @@ main #catering-service .party-bottom address:last-child {
   color: #FFAEAE;
   position: absolute;
   right: 0;
-  margin: -100px 50px 0 0;
+  margin: -300px 50px 0 0;
 }
 #access .koko {
   color: #FFAEAE;

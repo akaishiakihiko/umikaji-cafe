@@ -164,9 +164,6 @@ header {
 }
 
 
-
-
-
 //-------------------------------
 // フッター
 // ------------------------------
@@ -405,6 +402,8 @@ main {
 
 
   #party-box {
+    display: none;
+
     .party-top img {
       width: 100%;
       margin: 0 auto;
@@ -428,7 +427,6 @@ main {
         font-size: $font-size-large;
         padding-bottom: 30px;
         border-bottom: 1px solid $color;
-
       }
 
       p {
@@ -478,7 +476,6 @@ main {
         top: -100px;
         left: 300px;
       }
-
     }
   }
 
@@ -552,7 +549,6 @@ main {
         font-size: $font-size-middle;
       }
 
-
       address:last-child {
         display: inline-block;
         border: 1px solid $color;
@@ -560,8 +556,6 @@ main {
       }
     }
   }
-
-
 }
 
 //-------------------------------
@@ -570,7 +564,7 @@ main {
 
 #view {
   .news {
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
   .news .header-mainvisual img {
@@ -599,7 +593,7 @@ main {
   }
 
   .news {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
   }
 
   .card-text {
@@ -628,9 +622,11 @@ main {
     }
   }
 
-  .naha-airplane img {
-    margin-left: 0px;
-    margin-bottom: 100px;
+  .naha-airplane {
+    img {
+      margin-left: 0px;
+      margin-bottom: 100px;
+    }
   }
 
   .naha-airpote {
@@ -675,6 +671,9 @@ main {
 // ---------------------------
 
 #access {
+  .news {
+    margin-top: 300px;
+  }
 
   .header-mainvisual img {
     padding: 5px;
@@ -687,7 +686,7 @@ main {
     color: $accent-color;
     position: absolute;
     right: 0;
-    margin: -100px 50px 0 0;
+    margin: -300px 50px 0 0;
   }
 
   .koko {
@@ -750,6 +749,5 @@ main {
       line-height: 50px;
       border-top: 1px solid $color;
     }
-
   }
 }

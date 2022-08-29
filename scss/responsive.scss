@@ -12,6 +12,7 @@
   // ヘッダー
   // ------------------------------
   header {
+
     small {
       display: none;
     }
@@ -36,7 +37,6 @@
         width: 320px;
         margin: 0 auto;
       }
-
     }
 
 
@@ -56,21 +56,15 @@
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
   //-------------------------------
   // メイン
   // ------------------------------
+
+
+  //-------------------------------
+  // トップページ
+  // ------------------------------
+
   main {
     .main-title {
       display: none;
@@ -133,6 +127,7 @@
     }
 
     #food-menu {
+
       .food-title {
         margin-bottom: 30px;
       }
@@ -180,7 +175,6 @@
       }
 
       .sweets-flame {
-
         padding: 0;
         margin: 0;
       }
@@ -197,7 +191,6 @@
             display: flex;
             flex-direction: column-reverse;
           }
-
 
           h3 {
             font-size: $font-size-middle;
@@ -219,11 +212,8 @@
     }
 
     .dog {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
       width: 60%;
+      margin-left: -20px;
       top: 200px;
     }
 
@@ -258,18 +248,12 @@
       .party-center {
         margin-bottom: 50px;
 
-        p {
-          display: none;
-        }
-      }
-
-      .party-bottom {
-        display: none;
       }
     }
 
     #catering-service {
       .party-title {
+        padding: 0 10px;
 
         h2,
         h3 {
@@ -281,6 +265,7 @@
 
       .party-center {
         width: 100%;
+        padding-left: 30px;
 
         h3 {
           font-size: $font-size-middle;
@@ -293,11 +278,6 @@
           font-size: $font-size-middle;
         }
 
-
-        .party-three {
-          display: none;
-        }
-
         .party-pizza {
           width: 100%;
           height: 100%;
@@ -305,18 +285,6 @@
         }
       }
     }
-
-
-
-
-
-
-
-    //-------------------------------
-    // トップページ
-    // ------------------------------
-
-
 
     //-------------------------------
     // ビュー
@@ -368,9 +336,11 @@
       }
 
       .naha-airplane {
+        width: 100%;
+
         img {
+          padding-left: 30px;
           margin-bottom: 0px;
-          padding: 0 10px;
         }
       }
 
@@ -381,26 +351,20 @@
       }
 
       .senaga-beach {
-        img:first-child {
-          display: none;
-        }
+        img:first-child {}
       }
 
 
       .sunset {
         flex-direction: column-reverse;
       }
-
-
     }
-
 
     //-------------------------------
     // アクセス
     // ------------------------------
 
     #access {
-
       .news {
         p {
           margin-bottom: 90px;
@@ -423,12 +387,17 @@
         }
       }
 
-      .google-map iframe {
-        width: 450px;
-        margin: 0 auto 30px auto;
+      .google-map {
+        width: 100%;
+
+        iframe {
+          width: 450px;
+          margin: 0 auto;
+        }
       }
 
       dl {
+        display: none;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -436,11 +405,13 @@
       }
 
       dt {
+        display: none;
         width: 50%;
         height: 0;
       }
 
       dd {
+        display: none;
         width: 50%;
         height: 0;
       }
@@ -448,15 +419,16 @@
     }
   }
 
-
-  // ------------------------------- 
+  //-------------------------------
   // フッター
-  //  ------------------------------ 
+  // ------------------------------
+
   .copy {
     display: none;
   }
 
   footer {
+    display: none;
     width: 100%;
     height: 100%;
     display: flex;
@@ -479,6 +451,4 @@
       }
     }
   }
-
-
 }

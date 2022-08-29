@@ -143,11 +143,8 @@
     width: 100%;
   }
   main .dog {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
     width: 60%;
+    margin-left: -20px;
     top: 200px;
   }
   main .cat-text p:first-child {
@@ -172,11 +169,8 @@ main #party-box .party-title h3 {
   main #party-box .party-center {
     margin-bottom: 50px;
   }
-  main #party-box .party-center p {
-    display: none;
-  }
-  main #party-box .party-bottom {
-    display: none;
+  main #catering-service .party-title {
+    padding: 0 10px;
   }
   main #catering-service .party-title h2,
 main #catering-service .party-title h3 {
@@ -185,15 +179,13 @@ main #catering-service .party-title h3 {
   }
   main #catering-service .party-center {
     width: 100%;
+    padding-left: 30px;
   }
   main #catering-service .party-center h3 {
     font-size: 20px;
   }
   main #catering-service .party-bottom h3 {
     font-size: 20px;
-  }
-  main #catering-service .party-bottom .party-three {
-    display: none;
   }
   main #catering-service .party-bottom .party-pizza {
     width: 100%;
@@ -242,15 +234,15 @@ main #view .night h2 {
     width: 100%;
     padding: 0 10px;
   }
+  main #view .naha-airplane {
+    width: 100%;
+  }
   main #view .naha-airplane img {
+    padding-left: 30px;
     margin-bottom: 0px;
-    padding: 0 10px;
   }
   main #view .naha-airpote p {
     margin-bottom: 30px;
-  }
-  main #view .senaga-beach img:first-child {
-    display: none;
   }
   main #view .sunset {
     flex-direction: column-reverse;
@@ -270,21 +262,27 @@ main #view .night h2 {
     font-size: 14px;
     margin-bottom: 30px;
   }
+  main #access .google-map {
+    width: 100%;
+  }
   main #access .google-map iframe {
     width: 450px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
   }
   main #access dl {
+    display: none;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
   }
   main #access dt {
+    display: none;
     width: 50%;
     height: 0;
   }
   main #access dd {
+    display: none;
     width: 50%;
     height: 0;
   }
@@ -292,6 +290,7 @@ main #view .night h2 {
     display: none;
   }
   footer {
+    display: none;
     width: 100%;
     height: 100%;
     display: flex;

@@ -266,8 +266,9 @@ main #view .night h2 {
     width: 100%;
   }
   main #access .google-map iframe {
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
   main #access dl {
     display: none;

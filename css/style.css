@@ -5,6 +5,7 @@ body {
   color: #595757;
   background-color: #F7F6F5;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 a:hover {
